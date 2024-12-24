@@ -6,4 +6,8 @@ img{
 h1{
     border-style:inset ;
 }
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px;  
+}
 
