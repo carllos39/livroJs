@@ -16,7 +16,7 @@ let tipo;
 resp1.innerText=`Os lados podem formar um triângulo`;
 if(a ==b && b==c){
 tipo= 'Equilátero';
-}else if(a != b && b==c ){
+}else if(a != b && b==c ||b != a && a==c ||c != b && b==a){
   tipo= 'Isóceles';  
 }else{
     tipo= 'Escaleno';   
