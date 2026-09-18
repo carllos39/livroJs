@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programa Calculo de Parcelas</title>
+</head>
+<body>
+    <h1>Programa Calculo de Parcelas</h1>
+
+    <script>
+        const valor= Number(prompt("Informe o valor da compra"));
+        const num= Number(prompt("Informe o número de parcelas"));
+        const valorParcelas=Math.floor(valor /num);
+        const valorFinal = valorParcelas + (valor % num);
+
+        for(let i= 1;i < num;i++){
+       alert(`${i}ª parcela : ${valorParcelas.toFixed(2)}`);
+        }
+        alert(`${num}ª parcela : ${valorFinal.toFixed(2)}`);
+
+    </script>
+    
+</body>
+</html>

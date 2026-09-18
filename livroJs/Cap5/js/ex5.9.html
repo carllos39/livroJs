@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produção de Etiquetas</title>
+</head>
+<body>
+    <h1>Produção de Etiquetas</h1>
+    <script>
+const produto = prompt("Digite o nome do produto");
+const num =Number(prompt("Digite a quantidade de etiquetas"));
+
+for(let i = 1;i <= num;i++){
+alert(`${produto.padEnd(30)} ${produto.padEnd(30)}`)
+}
+if(num % 2==1){
+alert(`${produto}`);
+}
+    </script>
+</body>
+</html>
